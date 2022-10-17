@@ -1,0 +1,13 @@
+
+//User function Template for C++
+
+void rotate(int arr[], int n)
+{
+    int a=0;
+    int b=n-1;
+    while(a<=b)
+    {
+        swap(arr[a],arr[b]);
+        a++;
+    }
+}
