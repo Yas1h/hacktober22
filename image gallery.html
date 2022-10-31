@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<title>
+		How to make image Gallery Using
+		HTML CSS and Javascript?
+	</title>
+
+	<!--Style CSS-->
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<h1>Welcome to GeeksforGeeks Courses</h1>
+	<h6>Live Workshop and Online Courses!</h6>
+
+	<div class="myProducts">
+		<div class="myProducts-gallery">
+			<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20211110154408/DSwithCPPWorkshopthumbnail.png"
+				alt="click here"
+				onclick="myImageFunction(this)">
+			<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20211110154411/fullstacknodereactworkshopthumbnail.png"
+				alt="click here"
+				onclick="myImageFunction(this)">
+			<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20211110154416/systemdesignworkshoplivethumbnail.png"
+				alt="click here"
+				onclick="myImageFunction(this)">
+			<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20211110154413/getplacedseries1thumbnail.png"
+				alt="click here"
+				onclick="myImageFunction(this)">
+		</div>
+
+		<div class="image-container">
+			<img id="img-Box" src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20211110154408/DSwithCPPWorkshopthumbnail.png"
+				alt="click here">
+		</div>
+	</div>
+
+	<script>
+		function myImageFunction(productSmallImg) {
+			var productFullImg = document.getElementById("img-Box");
+			productFullImg.src = productSmallImg.src;
+		}
+	</script>
+</body>
+
+</html>
