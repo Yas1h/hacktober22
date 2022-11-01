@@ -10,7 +10,7 @@ import io
 
 
 from googleapiclient.discovery import build
-api_key="AIzaSyDsodmmoqOzxcaOpfHB2yaV2SVwgpmdzLA"   #google custom search api key
+api_key="********************************"   #google custom search api key
 
 
 
